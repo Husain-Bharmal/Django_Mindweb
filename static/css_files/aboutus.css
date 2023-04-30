@@ -1,0 +1,106 @@
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.card_container{
+display: flex;
+flex-wrap: wrap;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 2px 16px;
+    
+}
+.info{
+    width: 78%;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 0px 14px;
+    width: 22%;
+    /* height: 427px; */
+    /* height: fit-content; */
+    transition: 0.3s;
+}
+
+.card img{
+    align-items: center;
+    height: 249px;
+    width: 100%;
+}
+
+.about-section {
+    padding: 3px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+
+
+.title {
+    color: grey;
+    padding: 6px;
+    padding-left: 0px;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.email {
+    color: blue;
+    padding-bottom: 7px;
+}
+.about_heros h2{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+@media only screen and (max-width: 768px)    {
+   .card{
+    width: 40%;
+    margin-bottom: 10px;
+   }
+   .card h2{
+    font-size: 0.9rem;
+    width: 100%;
+    margin: 2px 2px;
+   }
+   .card img{
+    width: 100%;
+    /* height: fit-content; */
+    height: 50%;
+   }
+   .title{
+    font-size: smaller;
+    margin: 0px;
+    padding-left: 0px;
+   }
+   .info{
+    font-size: 0.7rem;
+   }
+.email{
+    font-size: 0.6rem;
+}
+}

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+
+body{
+  font-family: 'Luckiest Guy', cursive;
+  background-color: #E6E6EA;
+}
+
+header{
+  background:rgb(223, 114, 223);
+}
+
+.container{
+  width: 95%;
+  margin: auto;
+}
+
+.features{
+  position: absolute;
+  right: 50px;
+}
+
+.current a::after{
+  content: '-';
+  font-size: 4px;
+  background-color: white;
+  display: block;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 82% 18%;
+}
+
+.equation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+  font-size: 5.2vw;
+  background: #fff;
+  border-radius: 3px;
+  text-align: center;
+  height: 81vh;
+  margin: 10px 10px 0px 10px;
+}
+
+.equation h1{
+  display: inline;
+  padding: 20px;
+}
+
+.answer-options{
+  font-size: 5.2vw;
+  margin-right: 10px;
+}
+
+.options{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-top: 10px;
+  color: #fff;
+  transition: 2s;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.9);
+
+}
+
+
+@media(max-width:480px){
+  .equation h1{
+    display: inline;
+    padding: 10px;
+  } 
+  .options h1{
+    justify-content: center;
+    /* padding: 20px; */
+    line-height: -1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .features a{
+    margin-top: 10px; 
+  }
+  .equation{
+    height: 30vh;
+  }
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  .ans_opt{
+    padding: 0px 50px;
+    height: 10vh;
+    
+  }
+  .options h1{
+    justify-content: center;
+    /* padding: 20px; */
+    line-height: 2;
+  }
+  .options{
+    margin: 10px 5px;
+
+  }
+  .answer-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .features{
+    position: relative;
+    margin-top: 1%;
+    left: 2%;
+}
+
+  }
+

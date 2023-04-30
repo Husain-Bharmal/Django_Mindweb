@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block title %}<title>About-us</title>{% endblock title %}
+    {% block cssfile %}
+    <link rel="stylesheet" href=" {% static './css_files/aboutus.css' %} ">
+    {% endblock cssfile %}
+
+{% block body %}
+    <div class="about-section">
+        <h1>About Us</h1>
+        <p>This project is created by the students of KJSIT.</p>
+        <p>You can contact us with the details provided below.</p>
+    </div>
+
+<section class="about_heros">
+    <h2>About the Developers</h2>
+
+    <div class="card_container">
+        <div class="card">
+            <img src=" {% static './assets/about-us/ankit-removebg-preview.png' %} " alt="Avatar" >
+            <div class="container">
+                <h2>Ankit Bhanushali</h2>
+                <p class="title">Student</p>
+                <p class="info">I'm the team leader of this project.</p>
+                <p class="email">aab2@somaiya.edu</p>
+                <a href="https://www.instagram.com/abhanushali2808/" target="_blank">
+                  <p><button class="button">Contact</button></p>
+                </a>
+              </div>
+        </div>
+        <div class="card">
+            <img src=" {% static './assets/about-us/sagar-removebg-preview.png' %} " alt="Avatar" >
+            <div class="container">
+                <h2>Sagar Bhanushali</h2>
+                <p class="title">Student</p>
+                <p class="info">I've done the front-end of this project.</p>
+                <p class="email">sagar.nb@somaiya.edu</p>
+                <a href="https://www.instagram.com/ssagar____/" target="_blank">
+                  <p><button class="button">Contact</button></p>
+                </a>
+              </div>
+        </div>
+        <div class="card">
+            <img src=" {% static './assets/about-us/ishita-removebg-preview (1).png' %} " alt="Avatar" >
+            <div class="container">
+                <h2>Ishita Haria</h2>
+                <p class="title">Student</p>
+                <p class="info">I've done the front-end of this project.</p>
+                <p class="email">ishita.h@somaiya.edu</p>
+                <a href="https://www.instagram.com/haria__ishita" target="_blank">
+                  <p><button class="button">Contact</button></p>
+                </a>
+              </div>
+        </div>
+        <div class="card">
+            <img src=" {% static './assets/about-us/husain-removebg-preview.png' %} " alt="Avatar" >
+            <div class="container">
+                <h2>Husain Bharmal</h2>
+                <p class="title">Student</p>
+                <p class="info">I'm contributing to the back-end of this project</p>
+                <p class="email">husain.bharmal@somaiya.edu</p>
+                <a href="https://www.instagram.com/_husainbharmal" target="_blank">
+                  <p><button class="button">Contact</button></p>
+                </a>
+              </div>
+        </div>
+    </div>
+
+</section>
+    <script src=" {% static './js_files/navbar.js' %} "></script>
+{% endblock body %}

@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block title %}<title>Alphabets Song</title>{% endblock title %}
+    {% block cssfile %}<link rel="stylesheet" href=" {% static './css_files/alpha-song.css' %} ">{% endblock cssfile %}
+
+{% block body %}
+    <body>
+    <audio id="audio" >
+        <source src=" {% static './assets/ABCD_song.mp3' %} " type="audio/mpeg">
+      </audio>
+
+    <div class="container">
+        <button class="playbutton" id="playbutton"><i class="fa-solid fa-play"></i></i></button>
+        <button class="resetbutton" id="pausebutton"><i class="fa-solid fa-pause"></i></button>
+        <p class="play" >Play</p>
+        <p class="pause">Pause</p>
+        <div class="left_img" id="left"></div>
+        <div class="centre_img" id="centre"></div>
+        <div class="right_img" id="right"></div>
+    </div>
+
+
+    <script src=" {% static './js_files/alpga-song_list.js' %} "></script>
+    <script src=" {% static './js_files/alpha-song.js' %} "></script>
+</body>
+{% endblock body %}
+</html>

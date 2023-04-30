@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}<title>MIND WEB</title>{% endblock title %}
+{% block cssfile %}<link rel="stylesheet" href=" {% static './css_files/index.css' %} ">{% endblock cssfile %}
+
+{% block body %}
+<body>
+<!-- pop up login -->
+{% comment %} <div class="login_popup" id="popup_form">
+	<div class="box">
+		<div class="form">
+			<div class="close" id="close_btn">&times;</div>
+			<h1>Login Form</h1>
+			<div class="form_group">
+				<input type="text" placeholder="Enter your name" class="popup_input">
+			</div>
+			<div class="form_group">
+				<input type="text" placeholder="Enter your phoneno" class="popup_input">
+			</div>
+			<div class="form_group">
+				<input type="text" placeholder="Enter your email" class="popup_input">
+			</div>
+			<div class="form_group">
+				<input type="password" placeholder="Enter your password" class="popup_input">
+			</div>
+			
+			<button class="btn" type="submit">Login</button>
+		</div>
+	</div>
+</div> {% endcomment %}
+
+<br>
+<br>  
+
+  <main>
+    </div>
+    <div class="container">
+      <div id="my-cards" class="my-cards">
+        
+        <div class="card" id="weather_card">
+          <img class="image" src=" {% static './assets/INDEX/Alphabets.png' %} " alt="">
+          <div class="details">
+            <h2>Alphabets</h2>
+            <br>
+            <p>You can learn alphabets in fun way with voice assistance
+            </p>
+          </div>
+          <div class="middle">
+            <div>
+              <h1 class="article">LETS START!</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="quiz_card">
+          <img class="image" src=" {% static './assets/INDEX/Number chart.jpeg' %} " alt="">
+          <div class="details">
+            <h1>Numbers</h1>
+            <br>
+            <p>Here you can learn numbers form 1-50
+            </p>
+          </div>
+          <div class="middle">
+            <div>
+              <h1 class="article">LETS START!</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="marvel_card">
+          <img class="image" src=" {% static './assets/INDEX/Number game.jpg' %} " alt="">
+          <div class="details">
+            <h1>Math game</h1>
+            <br>
+            <p>Maths with fun
+            </p>
+          </div>
+          <div class="middle">
+            <div>
+              <h1 class="article">LETS START!</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="marvel_card">
+          <img class="image" src=" {% static './assets/spelling-game.png' %} " alt="">
+          <div class="details">
+            <h1>Spelling game</h1>
+            <br>
+            <p>Play the spelling game
+            </p>
+          </div>
+          <div class="middle">
+            <div>
+              <h1 class="article">LETS START!</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="marvel_card">
+          <img class="image" src=" {% static './assets/abc_song.jpg' %} " alt="">
+          <div class="details">
+            <h1>Alphabet song</h1>
+            <br>
+            <p>Let's learn alphabets with song
+            </p>
+          </div>
+          <div class="middle">
+            <div>
+              <h1 class="article">LETS START!</h1>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <script src=" {% static './js_files/index.js' %} "></script>
+</body>
+{% endblock body %}

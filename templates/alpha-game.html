@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block title %}<title>Alphabets-Game</title>{% endblock title %}
+
+    {% block cssfile %}
+    <link rel="stylesheet" href=" {% static './css_files/alpha-game.css' %} ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.css">
+    <link rel="icon" href="./html_pages/assets/favicon.ico" type="image/x-icon">
+    {% endblock cssfile %}
+    
+{% block body %}
+<body>
+    <div class="alphagame">
+
+    <div class="game_container">
+        <div class="heading">
+            Alphabets-Game
+        </div>
+
+        <div class="image_hint" id="image-pic">
+            <img  width="150px" height="150px">
+        </div>
+
+        <input type="text"  class="typeinput" maxlength="1">
+        <div class="inputs">
+        </div>
+
+        <div class="info">
+            <p class="remaining">Remaining-Guesses: <strong><span>10</span></strong> </p>
+        </div>
+
+        <button class="reset" id="reset">RESET GAME</button>
+  
+    </div>
+</div>
+
+    <script src=" {% static './js_files/alpha-game_list.js' %} "></script>
+    <script src=" {% static './js_files/alpha-game.js' %} "></script>
+</body>
+{% endblock body %}

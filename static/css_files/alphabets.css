@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Luckiest Guy', cursive;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 1250px;
+    background-color:rgb(224, 176, 255);
+}
+
+
+.images{
+    position: sticky;
+    top: 210px;
+} 
+.spellings{
+    position: fixed; 
+    top: 60px; 
+
+} 
+
+.spellings{
+    background-color: rgb(200, 142, 142);
+    font-size: 50px;
+    border: 2px solid black;
+    width: 550px;
+    height: 101px;
+    border-radius: 20px;
+    margin: 30px;
+    margin-top: 2px;
+    padding: 30px 0px 0px 40px;
+    box-shadow: 10px 10px  5px black;
+}
+
+.alphabets{
+    background-color: rgb(177, 245, 245);
+    grid-template-columns: 100px 100px 100px 100px ;
+    grid-template-rows: 160px 160px 160px 160px 160px 160px;
+    column-gap: 50px;
+    display: grid;
+    border: 2px solid black;
+    width: 550px;
+    height: 1150px;
+    border-radius: 20px;
+    margin: 7px 30px 0px 30px;
+    padding: 25px 70px 0px 50px;
+    box-shadow: 0 4px 6px 5px rgba(0,0, 0, 2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.images{
+    display: flex;
+    column-gap: 50px;
+    background-color: rgb(244, 144, 144);
+    margin: 30px 30px 10px 30px;
+    border: 2px solid black;
+    width: 550px;
+    height: 490px;
+    border-radius: 20px;
+    padding: 30px 0px 0px 40px;
+    box-shadow: 10px 10px 5px rgb(0, 0, 0);
+}
+
+.button{
+    width: 120px;
+    height: 120px;
+    font-size: 50px;
+    border-radius: 70px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.button:hover{
+    background-color: rgb(181, 183, 181);
+}
+
+.img1{
+    cursor: pointer;
+    /* border: 2px solid red; */
+    width: 250px;
+    height: 250px;
+    margin-top: 100px;
+}
+
+.img1:hover{
+    box-shadow: 3px 3px 7px black;
+}
+
+.img2:hover{
+    box-shadow: 3px 3px 7px black;
+}
+
+.img3:hover{
+    box-shadow: 3px 3px 7px black;
+}
+
+
+.img2{
+    cursor: pointer;
+    /* border: 2px solid blue; */
+    height: 200px
+}
+
+.img3{
+    cursor: pointer;
+    /* border: 2px solid black; */
+    height: 200px;
+    margin-top: 50px;
+}
+
+.sideimg{
+    width: 200px;
+}

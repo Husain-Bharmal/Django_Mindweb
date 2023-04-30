@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}Navbar{% endblock title %}
+    <link rel="stylesheet" href=" {% static './css_files/navbar.css' %} ">    
+    {% block cssfile %}{% endblock cssfile %}
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+          <a href=" {% static './index.html' %} " class="logo" ><img  src=" {% static './assets/LOGO.jpg' %} " alt="logo"></a>
+          
+          <div class="nav-items">
+            <a href="/home">Home</a>
+            <a href="/aboutus">About us</a>
+            <a href="/contactus">Contact us</a>
+            <a href="#">Test</a>
+            <div class="dropdown">
+              <a class="dropbtn">Features</a>
+              <div class="dropdown-content">
+                <a href="/alphabets">Alphabets</a>
+                <a href="/number_table">Number Table</a>
+                <a href="/mathgame">Math game</a>
+                <a href="/alpha-game">Spelling-game</a>
+                <a href="/alpha-song">Alphabet-song</a>
+              </div>
+            </div>
+            {% block extranav %}{% endblock extranav %}    
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+      </nav>
+
+{% block body %}{% endblock body %}
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}<title>Number page</title>{% endblock title %}
+
+{% block cssfile %}
+    <link rel="stylesheet" href=" {% static './css_files/number_table.css' %} ">
+{% endblock cssfile %}
+
+{% block body %}
+<body>
+    <div class="heading">
+        <h1>
+            Numbers numbers(1-50)
+        </h1>
+    </div>
+    <div class="written">
+        <p id="writing">spellings will be here</p>
+    </div>
+    <div class="table">
+
+        <div class="numbers" id="num1" onclick="spellings()">1</div>
+        <div class="numbers" id="num2" onclick="spellings()">2</div>
+        <div class="numbers" id="num3"  onclick="spellings()">3</div>
+        <div class="numbers" id="num4" onclick="spellings()">4</div>
+        <div class="numbers" id="num5" onclick="spellings()">5</div>
+        <div class="numbers" id="num6" onclick="spellings()">6</div>
+        <div class="numbers" id="num7" onclick="spellings()">7</div>
+        <div class="numbers" id="num8" onclick="spellings()">8</div>
+        <div class="numbers" id="num9" onclick="spellings()">9</div>
+        <div class="numbers" id="num10" onclick="spellings()">10</div>
+        <div class="numbers" id="num11" onclick="spellings()">11</div>
+        <div class="numbers" id="num12" onclick="spellings()">12</div>
+        <div class="numbers" id="num13" onclick="spellings()">13</div>
+        <div class="numbers" id="num14" onclick="spellings()">14</div>
+        <div class="numbers" id="num15" onclick="spellings()">15</div>
+        <div class="numbers" id="num16" onclick="spellings()">16</div>
+        <div class="numbers" id="num17" onclick="spellings()">17</div>
+        <div class="numbers" id="num18" onclick="spellings()">18</div>
+        <div class="numbers" id="num19" onclick="spellings()">19</div>
+        <div class="numbers" id="num20" onclick="spellings()">20</div>
+        <div class="numbers" id="num21" onclick="spellings()">21</div>
+        <div class="numbers" id="num22" onclick="spellings()">22</div>
+        <div class="numbers" id="num23" onclick="spellings()">23</div>
+        <div class="numbers" id="num24" onclick="spellings()">24</div>
+        <div class="numbers" id="num25" onclick="spellings()">25</div>
+        <div class="numbers" id="num26" onclick="spellings()">26</div>
+        <div class="numbers" id="num27" onclick="spellings()">27</div>
+        <div class="numbers" id="num28" onclick="spellings()">28</div>
+        <div class="numbers" id="num29" onclick="spellings()">29</div>
+        <div class="numbers" id="num30" onclick="spellings()">30</div>
+        <div class="numbers" id="num31" onclick="spellings()">31</div>
+        <div class="numbers" id="num32" onclick="spellings()">32</div>
+        <div class="numbers" id="num33" onclick="spellings()">33</div>
+        <div class="numbers" id="num34" onclick="spellings()">34</div>
+        <div class="numbers" id="num35" onclick="spellings()">35</div>
+        <div class="numbers" id="num36" onclick="spellings()">36</div>
+        <div class="numbers" id="num37" onclick="spellings()">37</div>
+        <div class="numbers" id="num38" onclick="spellings()">38</div>
+        <div class="numbers" id="num39" onclick="spellings()">39</div>
+        <div class="numbers" id="num40" onclick="spellings()">40</div>
+        <div class="numbers" id="num41" onclick="spellings()">41</div>
+        <div class="numbers" id="num42" onclick="spellings()">42</div>
+        <div class="numbers" id="num43" onclick="spellings()">43</div>
+        <div class="numbers" id="num44" onclick="spellings()">44</div>
+        <div class="numbers" id="num45" onclick="spellings()">45</div>
+        <div class="numbers" id="num46" onclick="spellings()">46</div>
+        <div class="numbers" id="num47" onclick="spellings()">47</div>
+        <div class="numbers" id="num48" onclick="spellings()">48</div>
+        <div class="numbers" id="num49" onclick="spellings()">49</div>
+        <div class="numbers" id="num50" onclick="spellings()">50</div>
+
+    </div>
+<footer>
+    <p class="text-footer">
+        Copyright &copy; 2023 - www.mindweb.com - All rights reserved
+    </p>
+</footer>
+    <script src=" {% static './js_files/number_table.js' %} "></script>
+</body>
+{% endblock body %}
