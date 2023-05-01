@@ -1,41 +1,40 @@
 document.getElementsByClassName("image")[0].addEventListener("click", () => {
         
-        window.open("/alphabets", "_self");
+        window.open('alphabets', "_self");
 });
 
 document.getElementsByClassName("article")[0].addEventListener("click", () => {
-        window.open("/alphabets.html", "_self");
+        window.open('alphabets', "_self");
 });
 
 document.getElementsByClassName("image")[1].addEventListener("click", () => {
-        window.open("/number_table.html", "_self");
+        window.open('number_table', "_self");
 });
 
 document.getElementsByClassName("article")[1].addEventListener("click", () => {
-        window.open("/number_table.html", "_self");
+        window.open('number_table', "_self");
 });
 
-add=URL("/ADD")
 document.getElementsByClassName("image")[2].addEventListener("click", () => {
-        window.open("\mind_web\views.py/ADD.html", "_self");
+        window.open("ADD", "_self");
 });
 
 document.getElementsByClassName("article")[2].addEventListener("click", () => {
-        window.open("\mind_web\views.py/ADD.html", "_self");
+        window.open("ADD", "_self");
 });
 
 document.getElementsByClassName("image")[3].addEventListener("click", () => {
-        window.open("/alpha-game.html", "_self");
+        window.open("alpha-game", "_self");
 });
 document.getElementsByClassName("article")[3].addEventListener("click", () => {
-        window.open("/alpha-game.html", "_self");
+        window.open("alpha-game", "_self");
 });
 
 document.getElementsByClassName("image")[4].addEventListener("click", () => {
-        window.open("/alpha-song.html", "_self");
+        window.open("alpha-song", "_self");
 });
 document.getElementsByClassName("article")[4].addEventListener("click", () => {
-        window.open("/alpha-song.html", "_self");
+        window.open("alpha-song", "_self");
 });
 
 var popup_login = document.getElementById('popup_form');
