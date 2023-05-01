@@ -6,7 +6,7 @@
     {% block cssfile %}
     <link rel="stylesheet" href=" {% static './css_files/alpha-game.css' %} ">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.css">
-    <link rel="icon" href="./html_pages/assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{% static './assets/LOGO.jpg' %}" type="image/x-icon">
     {% endblock cssfile %}
     
 {% block body %}
@@ -19,7 +19,7 @@
         </div>
 
         <div class="image_hint" id="image-pic">
-            <img  width="150px" height="150px">
+            <img class="imagesize" width="150px" height="150px">
         </div>
 
         <input type="text"  class="typeinput" maxlength="1">

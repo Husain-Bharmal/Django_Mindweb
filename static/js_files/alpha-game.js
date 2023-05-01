@@ -1,6 +1,6 @@
 let img = document.getElementById('images')
 let restbtn = document.getElementById('reset') 
-let imgtag = document.querySelector("img")
+let imgtag = document.querySelector(".imagesize")
 // let imgtag = document.getElementsByClassName("image-pic")
 const inputs = document.querySelector(".inputs")
 typing_inputs = document.querySelector(".typeinput")
