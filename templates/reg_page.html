@@ -14,6 +14,13 @@
         <div class="box">
             <div class="form">
                 <h1>Registration Form</h1>
+                {% if messages %}
+                    <ul class="messages">
+                        {% for message in messages %}
+                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
                 <div class="form_group">
                     <input type="text" placeholder="Enter Username" class="popup_input" name="name">
                 </div>

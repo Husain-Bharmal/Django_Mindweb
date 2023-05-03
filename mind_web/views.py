@@ -56,6 +56,8 @@ def alphagame(request):
 def alphasong(request):
     return render(request, 'alpha-song.html')
 
+
+
 def registration(request):
     if request.method=='POST':
         name=request.POST.get('name')
@@ -67,14 +69,22 @@ def registration(request):
         # print( name,phone_no,age,email,pass1,pass2)
 
         if pass1!=pass2:
-            return HttpResponse ("passwrod or Password is incorrect!!!")
-            # messages.error(request, "Password and Confirm password must be same")
-            # return redirect('registration')
+            # return HttpResponse ("passwrod or Password is incorrect!!!")
+            messages.error(request, 'Password and Confrim Password must be same..')
+            return redirect('reg_page')
+        elif User.objects.filter(username=name):
+            messages.error(request, "Username already exist! Please try some other username.")
+            return redirect('reg_page')
+        elif User.objects.filter(email=email).exists():
+            messages.error(request, "Email Already Registered!!")
+            return redirect('reg_page')
         else:
             my_user=User.objects.create_user(name,email,pass1)
             my_user.save()
             return redirect('login_form')
     return render(request,'reg_page.html')
+
+
 
 def loginPage(request):
     if request.method=='POST':
