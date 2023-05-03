@@ -3,7 +3,9 @@ from django.urls import path
 from mind_web import views
 
 urlpatterns = [
-    path('',views.index, name='home'),
+    path('reg_page',views.registration, name='reg_page'),
+    path('',views.loginPage, name='login_form'),
+    path('login',views.loginPage, name='login'),
     path('home',views.home, name='home'),
     path('aboutus',views.aboutus, name='aboutus'),
     path('contactus', views.contactus, name='contactus'),
@@ -16,5 +18,5 @@ urlpatterns = [
     path('divide',views.divide, name='divide'),
     path('alpha-game',views.alphagame, name='alpha-game'),
     path('alpha-song',views.alphasong, name='alpha-song'),
-    path('login',views.login, name='login'),
+    path('logout',views.LogoutPage,name='logout'),
 ]
