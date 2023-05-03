@@ -16,4 +16,5 @@ urlpatterns = [
     path('divide',views.divide, name='divide'),
     path('alpha-game',views.alphagame, name='alpha-game'),
     path('alpha-song',views.alphasong, name='alpha-song'),
+    path('login',views.login, name='login'),
 ]

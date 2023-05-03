@@ -40,3 +40,5 @@ def alphagame(request):
 def alphasong(request):
     return render(request, 'alpha-song.html')
 
+def login(request):
+    return render(request,'login_page.html')
