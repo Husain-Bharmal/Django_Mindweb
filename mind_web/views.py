@@ -12,38 +12,47 @@ def home(request):
 # def index(request):
 #     return render(request, 'index.html')
 
-
-
+@login_required(login_url='login')
 def aboutus(request):
     return render(request, 'aboutus.html')
 
+@login_required(login_url='login')
 def contactus(request):
     return render(request, 'contactus.html')
 
+@login_required(login_url='login')
 def alphabets(request):
     return render(request, 'alphabets.html')
 
+@login_required(login_url='login')
 def number_table(request):
     return render(request, 'number_table.html')
 
+@login_required(login_url='login')
 def mathgame(request):
     return render(request, 'ADD.html')
 
+@login_required(login_url='login')
 def ADD(request):
     return render(request, 'ADD.html')
 
+@login_required(login_url='login')
 def subtract(request):
     return render(request, 'subtract.html')
 
+@login_required(login_url='login')
 def multiply(request):
     return render(request, 'multiply.html')
 
+@login_required(login_url='login')
 def divide(request):
     return render(request, 'divide.html')
 
+@login_required(login_url='login')
 def alphagame(request):
     return render(request, 'alpha-game.html')
 
+@login_required(login_url='login')
 def alphasong(request):
     return render(request, 'alpha-song.html')
 
